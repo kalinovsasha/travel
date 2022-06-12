@@ -2,6 +2,7 @@
 $main_color:#F2785C;
 $main_color_tr:rgba(242, 119, 92, 0.7);
 $second_color: #0D606F;
+$third_color:  #FFFFFF;
 
 @mixin h1 {
 margin: 0 0;
@@ -23,6 +24,14 @@ color: #FFFFFF;
   color: #FFFFFF;
 }
 
+@mixin wrapper_1200 {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
 @font-face {
   font-family: "Magra";
   src: url(../assets/fonts/Magra-Regular.ttf);
@@ -31,4 +40,9 @@ color: #FFFFFF;
 @font-face {
   font-family: "Red Hat Text";
   src: url(../assets/fonts/RedHatText-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url(../assets/fonts/Aleo-Regular.ttf);
 }

@@ -20,11 +20,8 @@
 }
 
 .header__container{
-  width: 1200px;
   height: 90px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include wrapper_1200;
 }
 
 .header__logo{
@@ -64,6 +61,7 @@
   margin: 0 0;
   list-style: none;
   @include nav_items_font;
+  font-weight: 500;
 }
 
 .header__login{
@@ -76,4 +74,89 @@
   align-self: center;
   @include nav_items_font;
   cursor: pointer;
+}
+
+.preview{
+  @include wrapper_1200;
+  margin: 10px auto;
+  height: 425px;
+}
+
+.preview__trip-plan{
+  width: 895px;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.preview__trip-plan__title{
+  padding: 0 0;
+  margin: 0 0;
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: $third_color;
+}
+
+.preview__trip-plan__text{
+  padding: 0 0;
+  margin: 0 0;
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $third_color;
+}
+
+.preview__trip-plan__input{
+  margin-top: 11px;
+  width: 892px;
+  height: 94px;
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+
+  input{
+    height: 22px;
+    width: 560px;
+    outline: none;
+    border: 0;
+    margin-left: 40px;
+    align-self: center;
+    background: rgba(190, 27, 27, 0);
+    border-radius: 16px;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $main_color;
+    &::placeholder{
+      margin-top: 5px;
+      font-family: 'Aleo';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: $main_color;
+    }
+  }
+}
+
+.preview__trip-plan__input__btn{
+  margin-left: 43px;
+  margin-top: 4px;
+  width: 228px;
+  height: 59px;
+  align-self: center;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: $third_color;
 }

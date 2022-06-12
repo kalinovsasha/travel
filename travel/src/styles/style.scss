@@ -1,7 +1,7 @@
 @import "header";
 @import "main";
 @import "footer";
-$main_color:#F2785C;
+
 
 body{
   margin: 0 0;
@@ -15,8 +15,7 @@ body{
 }
 
 .btn{
-  margin: 0 0;
-  padding: 0 0;
+  cursor: pointer;
   background-color: $second_color;
   border-radius: 10px;
   border: 0px;
