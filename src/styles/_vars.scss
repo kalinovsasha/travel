@@ -2,6 +2,7 @@
 $main_color:#F2785C;
 $main_color_tr:rgba(242, 119, 92, 0.7);
 $second_color: #0D606F;
+$second_color_hover:#01d6fc;
 $third_color:  #FFFFFF;
 
 @mixin h1 {
@@ -12,7 +13,7 @@ font-style: normal;
 font-weight: 600;
 font-size: 32px;
 line-height: 39px;
-color: #FFFFFF;
+color: $third_color;
 }
 
 @mixin h2_title {
@@ -39,7 +40,7 @@ color: #FFFFFF;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: $third_color;
 }
 
 @mixin wrapper_1200 {

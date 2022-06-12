@@ -47,6 +47,15 @@
   align-self: center;
 }
 
+.header__nav__href{
+  text-decoration: none;
+  @include nav_items_font;
+  &:hover{
+    transition: 0.3s;
+    color:$second_color_hover;
+  }
+}
+
 .header__nav__container{
   padding: 0 0;
   margin:  0 0;

@@ -1,16 +1,21 @@
 @import "header";
 @import "main";
 @import "footer";
+@import "vars";
 
+html{
+  scroll-behavior: smooth;
+}
 
 body{
   margin: 0 0;
   padding: 0 0;
+  background-color: $third_color;
 }
 
 .wrapper{
   width: 1440px;
-  height: 3735px;
+  //height: 3735px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -22,4 +27,8 @@ body{
   border: 0px;
   outline: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  &:hover{
+    transition: .25s;
+    background-color:$second_color_hover;
+  }
 }
