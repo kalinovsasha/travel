@@ -15,6 +15,24 @@ line-height: 39px;
 color: #FFFFFF;
 }
 
+@mixin h2_title {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: $main_color;
+}
+
+@mixin steps-h3 {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: $second_color;
+}
+
 @mixin nav_items_font {
   font-family: 'Red Hat Text';
   font-style: normal;
