@@ -18,7 +18,7 @@ color: #FFFFFF;
 @mixin h2_title {
   font-family: 'Red Hat Text';
   font-style: normal;
-  font-weight: 500;
+  font-weight:600;
   font-size: 40px;
   line-height: 53px;
   color: $main_color;
@@ -49,6 +49,15 @@ color: #FFFFFF;
   justify-content: space-between;
 }
 
+@mixin btn_font {
+  align-self: center;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: $third_color;
+}
 
 @font-face {
   font-family: "Magra";

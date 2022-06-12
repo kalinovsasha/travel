@@ -312,7 +312,7 @@
   margin: 0 0;
   font-family: 'Red Hat Text';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 40px;
   line-height: 53px;
   color: #F2785C;
@@ -412,6 +412,114 @@
   color: #0D606F;
 }
 
+.destinations {
+  width: 100%;
+  height: 1060px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.destinations__title {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
+  margin: 18px auto;
+  padding: 0 0;
+}
+
+.destinations__slider {
+  margin-top: 27px;
+  position: relative;
+  left: -540px;
+  width: 2520px;
+  height: 802px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.destinations__slider__item {
+  width: 800px;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider-controls {
+  width: 80px;
+  height: 22px;
+  margin: 24px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-controls__item {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #F2785C;
+}
+
+.destinations__btn {
+  margin-top: 15px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 228px;
+  height: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-self: center;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+
+.destinations__btn img {
+  margin-left: 12px;
+}
+
+.destinations__btn__txt {
+  margin-right: 20px;
+}
+
 body {
   margin: 0 0;
   padding: 0 0;
@@ -421,6 +529,7 @@ body {
   width: 1440px;
   height: 3735px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .btn {
