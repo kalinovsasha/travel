@@ -1,0 +1,34 @@
+
+$main_color:#F2785C;
+$main_color_tr:rgba(242, 119, 92, 0.7);
+$second_color: #0D606F;
+
+@mixin h1 {
+margin: 0 0;
+padding: 0 0;
+font-family: 'Magra';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 39px;
+color: #FFFFFF;
+}
+
+@mixin nav_items_font {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Magra";
+  src: url(../assets/fonts/Magra-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  src: url(../assets/fonts/RedHatText-Regular.ttf);
+}
