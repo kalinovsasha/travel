@@ -25,12 +25,39 @@ color: $third_color;
   color: $main_color;
 }
 
+@mixin h2_title_390 {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight:600;
+  font-size: 14px;
+  line-height: 19px;
+  color: $main_color;
+}
+
+@mixin h2_title_600 {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight:600;
+  font-size: 20px;
+  line-height: 20px;
+  color: $main_color;
+}
+
 @mixin steps-h3 {
   font-family: 'Aleo';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  color: $second_color;
+}
+
+@mixin steps-h3-390 {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
   color: $second_color;
 }
 
@@ -44,7 +71,14 @@ color: $third_color;
 }
 
 @mixin wrapper_1200 {
-  width: 1200px;
+  width: 83%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin wrapper_390 {
+  max-width: 390px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -57,6 +91,16 @@ color: $third_color;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+  color: $third_color;
+}
+
+@mixin btn_font-s {
+  align-self: center;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 15px;
   color: $third_color;
 }
 
