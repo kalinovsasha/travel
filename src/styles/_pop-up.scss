@@ -1,0 +1,200 @@
+@mixin btn-font-l {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+@mixin btn-font-s {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.pop-up{
+    position: fixed;
+    top: 80px;
+    left: calc(50% - 325px);
+    width: 650px;
+    height: 660px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: popup;
+    animation-duration: .35s;
+}
+
+.pop-up_hide{
+    display: none;
+}
+
+.pop-up__content-container{
+    width: 564px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-around;
+    align-items: center;
+}
+
+.pop-up__h2{
+    margin: 25px 0;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: $second_color;
+    align-self: center;
+}
+
+.pop-up__btn {
+    width: 560px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include btn-font-l;
+    box-shadow: 0px 5px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.507);
+    }
+    &:active{
+        transform: scaleX(99%);
+    }
+}
+
+.pop-up__btn img {
+    margin-right: 16px;
+}
+
+.btn-facebook{
+    margin-top: 5px;
+    background-color: #1877F2;
+    color: $third_color;
+}
+
+.btn-google{
+    margin-top: 18px;
+    color: $second_color;
+}
+
+.pop-up__line{
+    margin-top: 30px;
+    width: 590px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(13, 96, 111, 0.5);
+}
+
+.pop-up__span{
+    align-self: center;
+    margin-left: 9px;
+    margin-right: 9px;
+    width: 262px;
+    height: 1px;
+    background-color: $second_color;
+}
+
+.pop-up__input{
+    margin-top: 8px;
+    margin-bottom: 12px;
+    width: 560px;
+    height: 80px;
+}
+
+.pop-up__input h4{
+    margin: 0 0;
+}
+
+.pop-up__input input{
+    margin-top: 5px;
+    width: 560px;
+    height: 54px;
+    background: $third_color;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    @include btn-font-l();
+    &:hover{
+        box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.507);
+    }
+}
+
+.btn-sing-in{
+    margin-top: 12px;
+    background: $second_color;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    @include btn-font-l();
+    color: #FFFFFF;
+}
+
+.pop-up__forgot{
+    margin-top: 10px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0D606F;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+
+.line-long{
+    margin-top: -5px;
+    width: 95%;
+    height: 1px;
+    background-color: #0D606F;
+}
+
+.pop-up__register{
+    margin-top: 15px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(13, 96, 111, 0.5);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+
+.pop-up__register a{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #0D606F;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+
+@keyframes popup {
+    0%{
+        opacity: 0;
+        animation: ease-out;
+    }
+    100%{
+            opacity: 1;
+            animation: ease-out;
+    }
+}

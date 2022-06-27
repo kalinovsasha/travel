@@ -29,9 +29,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  img{
-    margin-left: 37px
-  }
 }
 
 .steps__container__item2{
@@ -51,9 +48,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  img{
-    margin-left: 35px
-  }
 }
 
 .steps__container__item__h3{
@@ -86,17 +80,61 @@
   margin-top: 27px;
   position: relative;
   left: -540px;
-  width: 2520px;
+  //width: 2520px;
+  width: 4243px;
   height: 802px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: .35s;
 }
 
 .slider__item{
   width: 800px;
   height: 800px;
-  object-fit: cover;
+  border-radius: 16px;
+}
+
+.slider-item1v{
+  width: 800px;
+  height: 800px;
+  background-image: url(../assets/img/Destination1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slider-item1{
+  width: 800px;
+  height: 800px;
+  background-image: url(../assets/img/Destination1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slider-item2{
+  width: 800px;
+  height: 800px;
+  background-image: url(../assets/img/Destination2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slider-item3{
+  width: 800px;
+  height: 800px;
+  background-image: url(../assets/img/Destination3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slider-item3v{
+  width: 800px;
+  height: 800px;
+  background-image: url(../assets/img/Destination3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider__item_visible{
+  animation: appeare;
+  animation-duration: .3s;
+  display: block !important;
 }
 
 .slider-controls{
@@ -125,12 +163,6 @@
   opacity: 1;
 }
 
-.slider__item_visible{
-  animation: appeare;
-  animation-duration: .3s;
-  display: block !important;
-}
-
 .destinations__btn{
   margin-top: 15px;
   align-self: center;
@@ -151,8 +183,8 @@
   margin-right: 20px;
 }
 
-//////////////////////////////////
-/// ////////////////////////////
+////////////////////////////////
+///////////////////////////////
 @media (max-width: 1120px) {
   .destinations{
     width: 100%;
@@ -234,6 +266,7 @@
         border-radius: 16px;
       }
   }
+  
 
   .arrow-slider-controls{
     position: relative;
@@ -359,8 +392,12 @@
     align-items: center;
     justify-content: space-between;
     img{
-     margin-right: 35px;
-     margin-top: -3px;
+     margin-right: 37px;
+     margin-top: -5px;
+    }
+    h3{
+      margin: 0 0;
+      margin-left: -15px;
     }
   }
   
@@ -374,7 +411,12 @@
     align-items: center;
     justify-content: space-between;
     img{
-      margin-top: -3px;
+      margin-left: -0px;
+      margin-top: -5px;
+    }
+    h3{
+      margin: 12px 0;
+      margin-left: -0px;
     }
   }
   
@@ -387,7 +429,11 @@
     justify-content: space-between;
     img{
      margin-left: 10px;
-     margin-top: -3px;
+     margin-top: -5px;
+    }
+    h3{
+      margin: 0px 0;
+      margin-left: 10px;
     }
   }
   
