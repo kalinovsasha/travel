@@ -26,14 +26,14 @@ document.body.addEventListener('click', (e)=>{
       break;
       case slider.sliderItem2:
         slider.slideCounter=1;
-        slider.sliderContainer.style.left='-1456px';
+        slider.sliderContainer.style.left='-1400px';
         slider.controlItem2.classList.add('slider-controls__item_active');
         slider.controlItem1.classList.remove('slider-controls__item_active');
         slider.controlItem3.classList.remove('slider-controls__item_active');
       break;
       case slider.sliderItem3:
         slider.slideCounter=2;
-        slider.sliderContainer.style.left='-2317px'
+        slider.sliderContainer.style.left='-2263px'
         slider.controlItem3.classList.add('slider-controls__item_active');
         slider.controlItem2.classList.remove('slider-controls__item_active');
         slider.controlItem1.classList.remove('slider-controls__item_active');

@@ -79,7 +79,7 @@
 .slider{
   margin-top: 27px;
   position: relative;
-  left: -540px;
+  left: -1400px;
   //width: 2520px;
   width: 4243px;
   height: 802px;
@@ -90,9 +90,25 @@
 }
 
 .slider__item{
+  display: flex;
+  flex-direction: row;
   width: 800px;
   height: 800px;
   border-radius: 16px;
+}
+
+.slider__item__txt{
+  align-self: flex-end;
+  margin-bottom: 40px;
+  margin-left: 15px;
+  width: 108px;
+  height: 42px;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: $third_color;
 }
 
 .slider-item1v{
@@ -134,7 +150,8 @@
 .slider__item_visible{
   animation: appeare;
   animation-duration: .3s;
-  display: block !important;
+  display: flex !important;
+  flex-direction: row
 }
 
 .slider-controls{
@@ -479,6 +496,17 @@
       }
   }
   
+  .slider__item__txt{
+    align-self: flex-start;
+    margin-top: 8px;
+    width: 60px;
+    height: 26px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: $third_color;
+  }
+
   .slider-controls{
     position: relative;
     top: -40px;
